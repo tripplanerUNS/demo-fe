@@ -1,0 +1,42 @@
+.wrap-sidebar {
+  position: fixed; /* Membuat sidebar tetap terpasang di sisi layar */
+  top: 0; /* Menempatkan sidebar di bagian atas layar */
+  left: 0; /* Menempatkan sidebar di sebelah kiri layar */
+  width: 18%; /* Sesuaikan lebar sidebar sesuai kebutuhan */
+  height: 100%; /* Menempatkan sidebar di sepanjang tinggi layar */
+  background-color: #8398ffc3; /* Warna latar belakang sidebar */
+  color: #fff; /* Warna teks sidebar */
+  z-index: 1000; /* Menentukan tumpukan di atas konten lain */
+  font-family:  'Nunito', sans-serif;
+}
+
+.sidebar-logo {
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrap-sidebar-nav {
+  padding-top: 20px;
+}
+
+.side-nav {
+  list-style-type: none; /* Menghilangkan bullet list */
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-item {
+  padding: 10px 20px;
+}
+
+.sidebar-item a {
+  color: #fff; /* Warna teks untuk tautan */
+  text-decoration: none; /* Menghapus garis bawah pada tautan */
+  display: block; /* Membuat tautan menjadi blok sehingga memenuhi lebar item */
+}
+
+.sidebar-item a:hover {
+  background-color: #555; /* Warna latar belakang saat tautan dihover */
+}

@@ -1,0 +1,64 @@
+/* Gaya untuk kotak "Tentang Kami" */
+.tentang-kami {
+  
+  margin-top: 3px;
+  margin-left: auto; /* Menengahkan .tentang-kami */
+  margin-right: auto; /* Menengahkan .tentang-kami */
+}
+
+/* Gaya untuk pembungkus teks */
+.text-wrapper {
+  font-size: 40px; /* Mengubah ukuran font menjadi 40px */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center; /* Mencentangkan teks ke tengah */
+  font-style: italic; /* Mengubah semua teks menjadi italic */
+}
+
+/* Gaya untuk konten */
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+/* Gaya untuk wadah gambar */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px; /* Penambahan padding top */
+  order: 2; /* Mengubah urutan tampilan menjadi urutan ke-2 (bawah) */
+}
+
+/* Gaya untuk gambar */
+.img {
+  width: 100%;
+  max-width: 690px; /* Atur lebar maksimum gambar */
+  height: 700px; /* Atur tinggi gambar agar sesuai proporsi */
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Gaya untuk deskripsi */
+.description {
+  flex: 1;
+  font-style: italic; /* Mengubah semua teks menjadi italic */
+  order: 3; /* Mengubah urutan tampilan menjadi urutan ke-3 (bawah) */
+  margin-left: auto; /* Menengahkan teks deskripsi */
+  margin-right: auto; /* Menengahkan teks deskripsi */
+  text-align: center; /* Mencentangkan teks deskripsi ke tengah */
+}
+
+/* Gaya untuk elemen div, p, dan pembungkus teks kedua */
+.div,
+.p,
+.text-wrapper-2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.6;
+  font-style: italic; /* Mengubah semua teks menjadi italic */
+}
+
+/* Gaya untuk pembungkus teks kedua */
+.text-wrapper-2 {
+  font-style: italic; /* Mengubah semua teks menjadi italic */
+}

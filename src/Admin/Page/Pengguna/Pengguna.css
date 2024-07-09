@@ -1,0 +1,73 @@
+.Pengguna-wrap {
+  display: flex;
+  margin-top: 1%; /* Mengurangi margin top */
+}
+
+.container-pengguna {
+  flex: 1;
+  padding: 10px; /* Mengurangi padding */
+  border-radius: 6px; /* Mengurangi border radius */
+}
+
+.button-tambah-pengguna {
+  padding: 8px 16px; /* Mengurangi padding */
+  font-size: 14px; /* Mengurangi ukuran font */
+  border-radius: 3px; /* Mengurangi border radius */
+  margin-left: 83.1%;
+}
+
+.table-pengguna-content {
+  margin-top: 16px; /* Mengurangi margin top */
+}
+
+.table-pengguna-content table {
+  width: 70%;
+  border-collapse: collapse;
+  margin-left: 25%;
+}
+
+.table-pengguna-content th,
+.table-pengguna-content td {
+  padding: 8px; /* Mengurangi padding */
+  border: 1px solid #ccc;
+  font-size: 14px; /* Mengurangi ukuran font */
+}
+
+.table-pengguna-content th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.action-edit {
+  background-color: #3f49dd; /* Red color for delete action */
+  color: #ffffff; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add some border radius */
+  padding: 8px 15px; /* Add padding */
+  cursor: pointer; /* Add pointer cursor on hover */
+  font-size: 16px; /* Set font size */
+  margin-left: 25%;
+}
+
+.action :hover {
+  background-color: #cc0000; /* Darker red color on hover */
+}
+
+.action-delete {
+  background-color: #ff0000; /* Red color for delete action */
+  color: #ffffff; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add some border radius */
+  padding: 8px 15px; /* Add padding */
+  cursor: pointer; /* Add pointer cursor on hover */
+  font-size: 16px; /* Set font size */
+  margin-left: 4%;
+}
+
+.action-delete:hover {
+  background-color: #703838; /* Darker red color on hover */
+}
+
+.action-edit:hover {
+  background-color: #a32121; /* Darker red color on hover */
+}

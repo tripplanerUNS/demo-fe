@@ -1,0 +1,129 @@
+.wrapClogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center; /* Pindahkan ke tengah */
+  border-bottom: 1px solid #ddd;
+}
+
+.Loginn {
+  background-color: white;
+  padding: 50px;
+  height: 80%;
+  width: 40%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.imageLogin {
+  margin-bottom: 3%;
+}
+
+.imageLogin img {
+  max-width: 10%;
+  height: auto;
+}
+
+.Loginn h1 {
+  margin-top: 0;
+  color: #333;
+  font-size: 20px;
+}
+
+.content-loginn {
+  margin-bottom: 20px;
+}
+
+.content-loginn input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.masuk {
+  width: 80%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10% 4% 10%;
+}
+
+.masuk:hover {
+  background-color: #45a049;
+}
+
+.content-bawah {
+  margin-left: 7%;
+}
+
+.Forget {
+  margin-top: 15px;
+  color: #666;
+  font-size: 14px;
+
+}
+
+.keluar {
+  background-color: transparent;
+  border: none;
+  color: #4caf50;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.Pilihan {
+  color: #666;
+  font-size: 16px;
+}
+
+.keluar:hover {
+  color: #45a049;
+}
+
+.Forgett {
+  margin-top: 10px;
+  color: #666;
+  font-size: 16px;
+}
+
+.tab-container {
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.tab-button {
+  background-color: #f1f1f1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: 0.3s;
+  font-size: 16px;
+  border-radius: 2px;
+}
+
+.tab-button.active {
+    background-color: #4CAF50;
+    color: white;
+}
+

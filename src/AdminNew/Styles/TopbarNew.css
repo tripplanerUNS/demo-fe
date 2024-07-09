@@ -1,0 +1,27 @@
+.wrap-top-bar {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-bar-content {
+    display: flex;
+    align-items: center;
+}
+
+.content-account {
+    display: flex;
+    align-items: center;
+}
+
+.account-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.account-name span {
+    font-size: 16px;
+}

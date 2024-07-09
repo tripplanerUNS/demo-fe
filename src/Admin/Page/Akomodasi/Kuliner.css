@@ -1,0 +1,39 @@
+.Kuliner-wrap {
+    display: flex;
+    margin-top: 1%; /* Mengurangi margin top */
+  }
+  
+  .container-kuliner {
+    flex: 1;
+    padding: 10px; /* Mengurangi padding */
+    border-radius: 6px; /* Mengurangi border radius */
+  }
+  
+  .button-tambah-kuliner {
+    padding: 8px 16px; /* Mengurangi padding */
+    font-size: 14px; /* Mengurangi ukuran font */
+    border-radius: 3px; /* Mengurangi border radius */
+    margin-left: 83.1%;
+  }
+  
+  .table-kuliner-content {
+    margin-top: 16px; /* Mengurangi margin top */
+  }
+  
+  .table-kuliner-content table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-left: 25%;
+  }
+  
+  .table-kuliner-content th,
+  .table-kuliner-content td {
+    padding: 8px; /* Mengurangi padding */
+    border: 1px solid #ccc;
+    font-size: 14px; /* Mengurangi ukuran font */
+  }
+  
+  .table-kuliner-content th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }

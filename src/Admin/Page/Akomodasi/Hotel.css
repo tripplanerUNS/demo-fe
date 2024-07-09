@@ -1,0 +1,92 @@
+.Pengguna-wrap {
+  display: flex;
+  margin-top: 1%; /* Mengurangi margin top */
+}
+
+.container-hotel {
+  flex: 1;
+  padding: 10px; /* Mengurangi padding */
+  border-radius: 6px; /* Mengurangi border radius */
+}
+
+.button-tambah-hotel {
+  padding: 8px 16px; /* Mengurangi padding */
+  font-size: 14px; /* Mengurangi ukuran font */
+  border-radius: 3px; /* Mengurangi border radius */
+  margin-left: 83.1%;
+}
+
+.table-hotel-content {
+  margin-top: 16px; /* Mengurangi margin top */
+}
+
+.table-hotel-content table {
+  width: 70%;
+  border-collapse: collapse;
+  margin-left: 20%;
+}
+
+.table-hotel-content th,
+.table-hotel-content td {
+  padding: 8px; /* Mengurangi padding */
+  border: 1px solid #ccc;
+  font-size: 14px; /* Mengurangi ukuran font */
+}
+
+.table-hotel-content th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.icon-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.icon:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.1);
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+  fill: #555;
+  transition: fill 0.3s ease;
+}
+
+.icon:hover svg {
+  fill: #000;
+}
+
+.icon:focus {
+  outline: none;
+  box-shadow: 0 0 3px 2px rgba(0, 123, 255, 0.25);
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Menentukan 3 kolom */
+  gap: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}

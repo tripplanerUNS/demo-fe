@@ -1,0 +1,111 @@
+/* reservasi.css */
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.transaction-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.transaction-details {
+  display: flex;
+}
+
+.hotel-details {
+  flex: 1;
+}
+
+.hotel-details h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.hotel-image {
+  width: 100%;
+  max-width: 200px; /* Menentukan lebar maksimum gambar */
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Menggeser teks ke bawah gambar */
+
+
+.package-details {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.package-details h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.package-details p {
+  margin-bottom: 5px;
+}
+
+.order-summary {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.payment-details {
+  background-color: white;
+  padding: 60px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.payment-details h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.payment-details label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.payment-details select,
+.payment-details input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.payment-details button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.payment-details button:hover {
+  background-color: #0056b3;
+}

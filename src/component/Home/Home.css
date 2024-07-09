@@ -1,0 +1,245 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.background {
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  margin-top: 75px;
+}
+
+.judul-konten {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 90px;
+}
+
+.judul-konten h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.judul-konten p {
+  font-size: 18px;
+}
+
+.new-content {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.new-content-search {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.new-content-search-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.new-content-search-row input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex: 1;
+}
+
+.new-content-search-button {
+  text-align: right;
+}
+
+.new-content-search-button button {
+  background-color: #007aff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+}
+
+.new-content-search-button button:hover {
+  background-color: #005bb5;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .new-content {
+    position: static;
+    transform: none;
+    top: auto;
+    left: auto;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .new-content-search {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .new-content-search-row {
+    flex-direction: column;
+  }
+
+  .new-content-search-row input {
+    margin-bottom: 10px;
+  }
+
+  .new-content-search-button {
+    text-align: center;
+  }
+}
+.wrap-bantuan-about {
+  padding: 50px 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.wrap-bantuan-about .title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+  margin-top: 190px;
+  font-family: sans-serif;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.gallery-item {
+  position: relative;
+  width: 150px; /* Adjust the width as needed */
+  margin: 10px;
+}
+
+.gallery-item img {
+  width: 385px;
+  height: 200px;
+  border-radius: 10px; /* Add border radius for rounded corners */
+}
+
+.gallery-item-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+}
+
+.wrap-about-home {
+  padding: 50px 0;
+  background-color: white;
+  margin-top: 5px;
+}
+
+.wrap-about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content {
+  text-align: center;
+}
+
+.about-content-text {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.about-content-1,
+.about-content-2,
+.about-content-3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.about-content-1-text,
+.about-content-2-text,
+.about-content-3-text {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.about-content-1-image,
+.about-content-2-image {
+  flex: 1;
+}
+
+.about-content-1-image img,
+.about-content-2-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.about-content-3-text {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.wrap-bantuan-home {
+  padding: 50px 20px; /* Adjust padding for responsive design */
+  background-color: white;
+  text-align: center;
+}
+
+.bantuan-home {
+  margin-top: 40px;
+}
+
+.bantuan-home-text {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.wrap-content-bantuan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-bantuan {
+  width: 100%;
+  max-width: 800px; /* Limit the width of the content */
+  height: 100px;
+  margin: 0 auto;
+}
+
+.content-bantuan-vidio iframe {
+  width: 65%;
+  height: 70%;
+  border: none;
+  border-radius: 10px; /* Rounded corners for the video */
+}
+
+/* Slick Slider Customization */
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0), 
+}

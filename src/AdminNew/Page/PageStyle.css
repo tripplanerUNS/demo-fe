@@ -1,0 +1,15 @@
+.wrap-agen-new {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.sidebar-main-content {
+    display: flex;
+    flex: 1;
+}
+
+.tabel-agen-new {
+    flex: 1;
+    padding: 20px;
+}

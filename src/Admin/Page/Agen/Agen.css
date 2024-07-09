@@ -1,0 +1,118 @@
+.Agen-wrap {
+  display: flex;
+  margin-top: 1%; /* Mengurangi margin top */
+}
+
+.container-agen {
+  flex: 1;
+  padding: 10px; /* Mengurangi padding */
+  border-radius: 6px; /* Mengurangi border radius */
+}
+
+.button-tambah-agen {
+  padding: 8px 16px; /* Mengurangi padding */
+  font-size: 14px; /* Mengurangi ukuran font */
+  border-radius: 3px; /* Mengurangi border radius */
+  margin-left: 85.7%;
+}
+
+.table-agen-content {
+  margin-top: 16px; /* Mengurangi margin top */
+}
+
+.table-agen-content table {
+  width: 70%;
+  border-collapse: collapse;
+  margin-left: 25%;
+}
+
+.table-agen-content th,
+.table-agen-content td {
+  padding: 8px; /* Mengurangi padding */
+  border: 1px solid #ccc;
+  font-size: 14px; /* Mengurangi ukuran font */
+}
+
+.table-agen-content th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.action-agen-edit {
+  background-color: #3f49dd; /* Red color for delete action */
+  color: #ffffff; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add some border radius */
+  padding: 8px 15px; /* Add padding */
+  cursor: pointer; /* Add pointer cursor on hover */
+  font-size: 16px; /* Set font size */
+  margin-left: 25%;
+}
+
+.action-agen:hover {
+  background-color: #cc0000; /* Darker red color on hover */
+}
+
+.action-agen-delete {
+  background-color: #ff0000; /* Red color for delete action */
+  color: #ffffff; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add some border radius */
+  padding: 8px 15px; /* Add padding */
+  cursor: pointer; /* Add pointer cursor on hover */
+  font-size: 16px; /* Set font size */
+  margin-left: 4%;
+}
+
+.action-agen-delete:hover {
+  background-color: #703838; /* Darker red color on hover */
+}
+
+.action-agen-edit:hover {
+  background-color: #a32121; /* Darker red color on hover */
+}
+
+.popup{
+  max-width: fit-content;
+}
+
+.popup-content{
+  justify-content: center;
+  
+}
+
+.edit-judul{
+  text-align: center;
+}
+
+.popup-content-form {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box; /* Untuk memastikan padding tidak menambah lebar input */
+}
+
+.tambah-form {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box; /* Untuk memastikan padding tidak menambah lebar input */
+}
+
+.close-btn-form {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-btn-form:hover {
+  background-color: #bd2130;
+}

@@ -1,0 +1,153 @@
+/* Profile.css */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.profile-section {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 800px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+  .profile-section h2 {
+    color: #000000;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+
+.profile-card {
+  display: flex;
+  flex-direction: row; /* Align items side by side */
+  align-items: flex-start; /* Align items at the start */
+  justify-content: space-between; /* Space between items */
+  gap: 50px; /* Add space between elements */
+}
+
+.profile-picture {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-picture .img {
+  width: 200px; /* Adjust width */
+  height: 200px; /* Adjust height */
+  border-radius: 10px; /* Square shape with slightly rounded corners */
+  border: 2px solid #ddd;
+  object-fit: cover; /* Ensures the image covers the square without distortion */
+}
+
+.camera-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.profile-info {
+  flex: 1;
+  text-align: left;
+  margin-left: 20px; /* Adds space between the image and the info */
+}
+
+.profile-info p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.profile-info strong {
+  color: #007bff;
+}
+
+.profile-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 200px;
+}
+
+.upload-logo,
+.upload-documents {
+  border: 2px dashed #007bff;
+  padding: 15px 30px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80%;
+  text-align: center;
+}
+
+.upload-logo:hover,
+.upload-documents:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-profile-button {
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  background-color: white;
+  color: #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.edit-profile-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-section {
+    padding: 15px;
+  }
+
+  .profile-section h2 {
+    font-size: 20px;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-info {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .profile-info p {
+    font-size: 14px;
+  }
+
+  .upload-logo,
+  .upload-documents {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

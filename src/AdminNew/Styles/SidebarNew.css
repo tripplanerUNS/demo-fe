@@ -1,0 +1,45 @@
+.wrap-sidebar-new {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.sidebar-new-content-logo {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sidebar-new-content-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-item-new {
+    padding: 10px 20px;
+}
+
+.sidebar-item-new a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-item-new-dropdown {
+    padding: 10px 20px;
+}
+
+.dropdown-content-new {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.dropdown-content-new li {
+    padding: 5px 0;
+}
+
+.dropdown-content-new li a {
+    color: white;
+    text-decoration: none;
+}

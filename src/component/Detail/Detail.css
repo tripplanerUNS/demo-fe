@@ -1,0 +1,426 @@
+/* General styles */
+body {
+  background-color: #f7f2f2;
+  font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container-home{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Destination detail wrap */
+.aon-destination-detail-wrap {
+  padding-top: 110px;
+  background-color: white;
+}
+
+.aon-destination-detail-wrap.loaded {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.aon-destination-detail-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destination-head {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.destination-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.hotel-images-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.hotel-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-title {
+  margin-bottom: 16px;
+}
+
+.hotel-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.rating,
+.description,
+.room-type-facilities,
+.location-city {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #ff7e67;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  float: right;
+}
+
+button:hover {
+  background-color: #ff6b53;
+}
+
+/* Footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Specific styles for Detail component */
+.detail-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 80px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #000;
+}
+
+.detail-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.detail-card h2 {
+  margin-bottom: 10px;
+}
+
+.rating {
+  margin: 20px 0;
+}
+
+.schedule {
+  margin-top: 20px;
+}
+
+.schedule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.schedule-details {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+
+.schedule-item:first-child {
+  border-top: none;
+}
+
+.back-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the images section */
+.hotel-images-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.hotel-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Container untuk No Image Available */
+.no-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Sesuaikan tinggi sesuai kebutuhan */
+  border: 2px dashed #ccc; /* Garis putus-putus */
+  border-radius: 8px; /* Sudut yang melengkung */
+  margin-bottom: 20px; /* Jarak antara kontainer dengan konten lainnya */
+}
+
+/* Teks untuk No Image Available */
+.no-image-text {
+  font-size: 16px;
+  color: #777; /* Warna abu-abu untuk teks */
+}
+
+/* Container untuk Monoloog Hotel Surabaya */
+.monolog-hotels-solo-container {
+  margin-top: 40px; /* Jarak atas kontainer dari konten sebelumnya */
+  padding: 20px; /* Padding kontainer */
+  background-color: #fff; /* Warna latar belakang putih */
+  border-radius: 10px; /* Sudut yang melengkung */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+/* Teks untuk Monoloog Hotel Surabaya */
+.monolog-hotels-solo-title {
+  font-size: 24px; /* Ukuran font */
+  margin-bottom: 10px; /* Jarak bawah teks */
+}
+
+
+/* Transport */
+
+/* Detail.css */
+
+.container-transport {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  height: 5vh; /* Full height */
+  max-width: 1500px;
+  margin: 0 auto;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.detail-card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 80px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #000;
+  width: 80%; /* 80% width of the container */
+  max-width: 1200px; /* Maximum width */
+  margin-left: auto; /* Center align */
+  margin-right: auto;
+}
+
+.header {
+  background: #0000FF;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.airline {
+  color: #000000;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content {
+  padding: 10px;
+}
+
+.timeline {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.time {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.arrow {
+  font-size: 18px;
+}
+
+.duration {
+  color: #A9A9A9;
+  font-size: 16px;
+  text-align: center;
+}
+
+.details {
+  border-top: 1px solid #A9A9A9;
+  padding-top: 10px;
+}
+
+.flight-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.time-place {
+  display: flex;
+  justify-content: space-between;
+}
+
+.place {
+  color: #A9A9A9;
+  font-size: 16px;
+}
+
+.class-code {
+  color: #A9A9A9;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  gap: 5px;
+}
+
+.class {
+  font-weight: bold;
+}
+
+.price {
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+}
+
+button {
+  background: #0000FF;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  width: auto;
+}
+
+button:hover {
+  background: #0000CC;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .detail-card {
+    padding: 20px; /* Adjust padding for tablets */
+    margin-top: 40px; /* Reduce top margin */
+    width: 90%; /* Increase width to fit better */
+  }
+
+  .airline {
+    font-size: 20px; /* Smaller font size for mobile */
+  }
+
+  .timeline {
+    flex-direction: column; /* Stack timeline items vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .time, .arrow {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .duration {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .price {
+    font-size: 20px; /* Adjust font size */
+    text-align: center; /* Center align text */
+  }
+
+  button {
+    font-size: 14px; /* Smaller font size */
+    padding: 8px 16px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .detail-card {
+    padding: 15px; /* Adjust padding for smaller screens */
+    margin-top: 20px; /* Reduce top margin */
+    width: 100%; /* Full width */
+  }
+
+  .airline {
+    font-size: 18px; /* Smaller font size */
+  }
+
+  .timeline {
+    flex-direction: column; /* Stack timeline items vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .time, .arrow {
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .duration {
+    font-size: 12px; /* Smaller font size */
+  }
+
+  .price {
+    font-size: 18px; /* Smaller font size */
+    text-align: center; /* Center align text */
+  }
+
+  button {
+    font-size: 12px; /* Smaller font size */
+    padding: 6px 12px; /* Adjust padding */
+  }
+}

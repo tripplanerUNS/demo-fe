@@ -1,0 +1,83 @@
+.wrap-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    width: 80%;
+    margin-left: 17.9%;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .search-topbar input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 14px;
+  }
+  
+  .topbar-user-profile {
+    display: flex;
+    align-items: center;
+    margin-left: 55%;
+  }
+  
+  .topbar-user-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .topbar-user-icon {
+    font-size: 24px;
+    margin-right: 10px; /* Menambahkan jarak antara ikon dan teks */
+  }
+  
+  .activity-topbar {
+    position: relative;
+    margin-right: 5%;
+  }
+  
+  .activity-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    margin-left: 10px; /* Menambahkan jarak antara ikon dan angka notifikasi */
+  }
+  
+  .activity-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff5733;
+    color: #fff;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 12px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 150px;
+  }
+  
+  .dropdown-item {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }

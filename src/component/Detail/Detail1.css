@@ -1,0 +1,375 @@
+.container-detail-paket {
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 80px;
+  font-family: Arial, sans-serif;
+}
+
+.main-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px; /* Add margin at the top */
+}
+
+.package-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.package-info h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.destination-info {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.destination-info h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.destination-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.hotel-info, .transport-info, .address-info {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hr-custom {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.hotel-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.hotel-image {
+  width: 150px;
+  max-height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+  margin-top: 20px; /* Add margin at the top */
+}
+
+.hotel-details {
+  flex-grow: 1;
+}
+
+.hotel-details h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.hotel-details p {
+  font-size: 12px;
+  color: #000000;
+  margin: 2px 0;
+}
+
+.hotel-price {
+  font-size: 14px;
+  font-weight: bold;
+  color: #FF0000;
+  margin-top: 5px;
+}
+
+.rating {
+  font-size: 24px;
+  color: #000000;
+  font-weight: bold;
+}
+
+/*transport*/
+.transport-info {
+  padding-top: 10px;
+}
+
+.transport-info h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-color: #007BFF;
+}
+
+.airline {
+  color: #32CD32;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content {
+  padding: 10px;
+}
+
+.timeline {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.time {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.arrow {
+  font-size: 18px;
+}
+
+.duration {
+  color: #A9A9A9;
+  font-size: 16px;
+  text-align: center;
+}
+
+.details {
+  border-top: 1px solid #A9A9A9;
+  padding-top: 10px;
+}
+
+.flight-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.time-place {
+  display: flex;
+  justify-content: space-between;
+}
+
+.place {
+  color: #A9A9A9;
+  font-size: 16px;
+}
+
+.class-code {
+  color: #A9A9A9;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  gap: 5px;
+}
+
+.class {
+  font-weight: bold;
+}
+
+.price {
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.address-info {
+  text-align: center;
+}
+
+.address-info h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.address-info p {
+  font-size: 12px;
+  color: #555;
+  margin: 2px 0;
+}
+
+.price-container {
+  flex: 1;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FF0000;
+}
+
+.order-container {
+  flex: 1;
+  text-align: right;
+}
+
+.order-container a {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-container a:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container-detail-paket {
+    padding: 10px;
+  }
+
+  .main-image {
+    max-height: 300px;
+  }
+
+  .package-info h1 {
+    font-size: 20px;
+  }
+
+  .destination-info h2 {
+    font-size: 16px;
+  }
+
+  .destination-info p {
+    font-size: 12px;
+  }
+
+  .hotel-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hotel-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 0 10px 0;
+  }
+
+  .hotel-details h4,
+  .hotel-details p {
+    font-size: 12px;
+  }
+
+  .hotel-price {
+    font-size: 12px;
+  }
+
+  .transport-info h3 {
+    font-size: 14px;
+  }
+
+  .time {
+    font-size: 16px;
+  }
+
+  .arrow {
+    font-size: 16px;
+  }
+
+  .duration,
+  .place,
+  .class-code {
+    font-size: 14px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .order-container a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-detail-paket {
+    padding: 5px;
+    margin-top: 40px;
+  }
+
+  .main-image {
+    max-height: 200px;
+  }
+
+  .package-info h1 {
+    font-size: 18px;
+  }
+
+  .destination-info h2 {
+    font-size: 14px;
+  }
+
+  .destination-info p {
+    font-size: 10px;
+  }
+
+  .hotel-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hotel-image {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 0 10px 0;
+  }
+
+  .hotel-details h4,
+  .hotel-details p {
+    font-size: 10px;
+  }
+
+  .hotel-price {
+    font-size: 10px;
+  }
+
+  .transport-info h3 {
+    font-size: 12px;
+  }
+
+  .time {
+    font-size: 14px;
+  }
+
+  .arrow {
+    font-size: 14px;
+  }
+
+  .duration,
+  .place,
+  .class-code {
+    font-size: 12px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .order-container a {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

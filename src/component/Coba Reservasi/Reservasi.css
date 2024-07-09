@@ -1,0 +1,345 @@
+/* Header */
+.wrap-header-reservasi {
+  background-color: #f5f5f5;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-reservasi-non {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.wrap-header-reservasi-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 50px;
+}
+
+.header-content-reservasi-stepper {
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.wrap-content-stepper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  list-style-type: none;
+}
+
+.content-header-stepper {
+  display: flex;
+  align-items: center;
+}
+
+.content-header-stepper-number {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.content-header-stepper-information {
+  font-size: 16px;
+  color: #333;
+}
+
+.user-profile-content {
+  display: flex;
+  align-items: center;
+}
+
+.icon-profile {
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.informasi-profile {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .wrap-header-reservasi {
+    padding: 15px;
+  }
+
+  .navbar-logo img {
+    height: 40px;
+  }
+
+  .header-content-reservasi-stepper {
+    margin: 0 10px;
+  }
+
+  .wrap-content-stepper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-header-stepper-number {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+  }
+
+  .content-header-stepper-information {
+    font-size: 14px;
+  }
+
+  .icon-profile {
+    width: 35px;
+    height: 35px;
+  }
+
+  .informasi-profile {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrap-header-reservasi {
+    padding: 10px;
+  }
+
+  .navbar-logo img {
+    height: 35px;
+  }
+
+  .header-content-reservasi-stepper {
+    margin: 0 5px;
+  }
+
+  .wrap-content-stepper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-header-stepper-number {
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+  }
+
+  .content-header-stepper-information {
+    font-size: 12px;
+  }
+
+  .icon-profile {
+    width: 30px;
+    height: 30px;
+  }
+
+  .informasi-profile {
+    font-size: 10px;
+  }
+}
+
+/* Content Reservasi */
+.wrap-reservasi2 {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.wrap-reservasi2-content {
+  margin-top: 20px;
+  width: 98%; /* Increase width */
+  max-width: 2000px; /* Increase max-width for wider content */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.wrap-reservasi-content-hrd,
+.wrap-reservasi-content-employee {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #ffffff; /* Change to white */
+  width: 100%; /* Increase width */
+  max-width: 2000px; /* Remove max-width restriction */
+  box-sizing: border-box;
+  display: flex; /* Flexbox layout */
+  flex-direction: row; /* Arrange items horizontally */
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+.wrap-reservasi-content-hrd-input-booking,
+.wrap-reservasi-content-employee-input-invite-employee {
+  margin-bottom: 20px;
+  flex: 1 1 48%; /* Flex items take 48% width */
+  margin-right: 2%; /* Small margin to the right */
+}
+
+.wrap-reservasi-content-hrd-input-booking-title,
+.wrap-reservasi-content-employee-input-invite-employee-title {
+  margin-bottom: 10px;
+}
+
+.wrap-reservasi-content-hrd-input-booking-title-text,
+.wrap-reservasi-content-hrd-input-invite-employee-title-text {
+  font-size: 18px;
+  color: #333;
+}
+
+.wrap-reservasi-content-hrd-input-booking-content,
+.wrap-reservasi-content-employee-input-booking-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrap-reservasi-content-hrd-input-booking-content-input,
+.wrap-reservasi-content-employee-input-booking-content-input {
+  flex: 1 1 100%;
+  margin-bottom: 10px;
+}
+
+.wrap-reservasi-content-hrd-input-booking-content-input input,
+.wrap-reservasi-content-employee-input-booking-content-input input {
+  width: 97%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Button styles */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Loading spinner */
+.loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #007bff;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Promo banner styles */
+.promo-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.promo-icon {
+  font-size: 24px;
+  margin: 0 5px;
+}
+
+.promo-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.promo-plus {
+  font-size: 24px;
+  margin: 0 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .wrap-reservasi2 {
+    padding: 10px;
+  }
+
+  .wrap-reservasi2-content {
+    padding: 15px;
+  }
+
+  .wrap-reservasi-content-hrd,
+  .wrap-reservasi-content-employee {
+    flex-direction: column; /* Arrange items vertically */
+    padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    padding: 8px;
+  }
+
+  button[type="submit"] {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrap-reservasi2 {
+    padding: 5px;
+  }
+
+  .wrap-reservasi2-content {
+    padding: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    padding: 6px;
+  }
+
+  button[type="submit"] {
+    padding: 6px;
+  }
+
+  .wrap-reservasi-content-hrd,
+  .wrap-reservasi-content-employee {
+    padding: 10px;
+  }
+
+  .promo-icon,
+  .promo-plus {
+    font-size: 20px;
+  }
+
+  .promo-text {
+    font-size: 14px;
+  }
+}

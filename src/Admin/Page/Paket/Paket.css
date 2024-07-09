@@ -1,0 +1,108 @@
+/* Paket.css */
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Topbar */
+.topbar {
+  height: 60px;
+  background-color: #555;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Main content */
+.paket-wrap {
+  margin-left: 250px; /* Adjust based on sidebar width */
+}
+
+.container-paket {
+  margin: 50px;
+}
+
+.add-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+.table-paket-content {
+  margin-top: 20px;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.edit-title, .add-title {
+  margin-bottom: 20px;
+}
+
+.popup-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.popup-btn:hover {
+  background-color: #c82333;
+}
+
+.add-button {
+  padding: 8px 16px; /* Mengurangi padding */
+  font-size: 14px; /* Mengurangi ukuran font */
+  border-radius: 3px; /* Mengurangi border radius */
+  margin-left: 85.7%;
+}

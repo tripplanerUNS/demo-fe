@@ -1,0 +1,161 @@
+/* Register.css */
+
+.wrap-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-register {
+  width: 100%;
+  max-width: 800px; /* Sesuaikan ukuran maksimum container sesuai kebutuhan */
+  margin: 0 auto; /* Pusatkan container */
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px; /* Tambahkan border radius */
+  background-color: #ffffff; /* Warna latar belakang */
+  padding: 20px; /* Tambahkan padding */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tambahkan efek bayangan */
+}
+
+
+.row {
+  display: flex;
+}
+
+.wrap-form-register {
+  width: 60%; /* Lebar form */
+  padding: 20px;
+}
+
+.image {
+  width: 40%; /* Lebar gambar */
+  display: flex;
+  justify-content: center; /* Pusatkan gambar secara horizontal */
+  align-items: center; /* Pusatkan gambar secara vertikal */
+}
+
+.image img {
+  max-width: 100%; /* Gambar tidak melebihi lebar parent */
+  height: auto; /* Gambar menyesuaikan proporsi */
+}
+
+.register-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label-input-register {
+  font-weight: 500;
+}
+
+.input-input-register {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.column-register {
+  flex: 1 1 auto;
+  margin-right: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  width: 170px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .column {
+    width: 100%; /* Full width on tablets */
+    margin-right: 0; /* Remove right margin */
+  }
+}
+
+@media (max-width: 480px) {
+  .column {
+    width: 100%; /* Full width on mobile devices */
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 20px; /* Increase bottom margin for spacing */
+    padding-bottom: 20px; /* Increase bottom padding for spacing */
+  }
+}
+.register {
+  margin-left: 5%;
+}
+
+.toaster {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .toast {
+    background-color: #000000;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 12px 20px;
+    margin-top: 10px;
+    max-width: 300px;
+    animation: slide-in 0.3s ease-out;
+  }
+  
+  .toast.success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .toast.error {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .toast.info {
+    background-color: #cce5ff;
+    color: #004085;
+  }
+  
+  .toast.warning {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
