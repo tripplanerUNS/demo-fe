@@ -4,9 +4,8 @@ import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 import HeaderReservasi from "./HeaderReservasi";
 import "./Reservasi.css";
-import ContentReservasi from "./ContentReservasi";
-import useSnap from "../../Hook/useSnap";
 import { FaPlane, FaHotel } from "react-icons/fa";
+import useSnap from "../../Hook/useSnap";
 
 function Reservasi2() {
   const { id_paket } = useParams();
@@ -98,9 +97,6 @@ function Reservasi2() {
       if (response.status === 201) {
         setLoading(false);
         setOpenSnap(true);
-        // alert("Reservasi berhasil disimpan");
-        // console.log("Response data:", response.data.data.snap_token);
-        // navigate("/Transaksi");
         snapEmbed(response.data.data.snap_token, "snap-container", {
           onSuccess: function (result) {
             setOpenSnap(false);
@@ -135,7 +131,7 @@ function Reservasi2() {
         <span className="promo-text">
           Paket Hemat Selangkah lagi Anda akan mendapatkan penawaran terbaik.
         </span>
-      </div>
+      </div>
       <div className="content-reservasi-non">
         {!OpenSnap && (
           <div className="wrap-reservasi2-content">
@@ -250,15 +246,17 @@ function Reservasi2() {
                     onClick={handleSubmit}
                     disabled={loading}
                   >
-                    {loading ? (
-                      <div className="loading-spinner"></div>
-                    ) : (
-                      "Kirim/Pembayaran"
-                    )}
+                    Kirim/Pembayaran
                   </button>
                 </div>
               </div>
             </div>
+          </div>
+        )}
+        {loading && (
+          <div className="loading-container">
+            <div className="loading-spinner"></div>
+            <div className="loading-text">Mohon tunggu, sedang memuat...</div>
           </div>
         )}
         <div id="snap-container"></div>

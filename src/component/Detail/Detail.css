@@ -224,6 +224,79 @@ button:hover {
   margin-bottom: 10px; /* Jarak bawah teks */
 }
 
+/* Responsive Styles for 921px width */
+@media (max-width: 921px) {
+  .container-home {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .destination-head {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .destination-card {
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .card-header {
+    padding: 10px;
+  }
+
+  .hotel-images-container {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .hotel-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .hotel-title {
+    font-size: 20px;
+  }
+
+  .rating,
+  .description,
+  .room-type-facilities,
+  .location-city {
+    margin-bottom: 8px;
+  }
+
+  .hotel-name-container {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .hotel-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .no-image-container {
+    height: 150px; /* Sesuaikan tinggi sesuai kebutuhan */
+  }
+
+  .no-image-text {
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+
+
 
 /* Transport */
 

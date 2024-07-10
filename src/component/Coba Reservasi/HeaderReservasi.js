@@ -7,7 +7,7 @@ function HeaderReservasi({ currentStep }) {
   return (
     <div className="wrap-header-reservasi">
       <div className="wrap-header-reservasi-content">
-        <div className="navbar-logo">
+        <div className="navbar-logo-new">
           <img src={logo} alt="Logo" />
         </div>
         <div className="header-content-reservasi-stepper">
@@ -32,10 +32,10 @@ function HeaderReservasi({ currentStep }) {
             </li>
           </ul>
         </div>
-        <div className="user-profile-content">
+        {/* <div className="user-profile-content">
           <span className="icon-profile"></span>
           <div className="informasi-profile"></div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

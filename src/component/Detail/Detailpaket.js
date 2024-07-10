@@ -1,34 +1,68 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./Detail1.css"; // Import the CSS file
 import Navbar from "../Navbar/Navbar";
 import axios from "axios";
 import { useParams, Link } from "react-router-dom";
+import { GlobalContext } from "../../State/globalstate"; // Import GlobalContext
 
 function Detailpaket() {
   const { id } = useParams();
   const [paket, setPaket] = useState(null);
+  const { jumlahKaryawan, jumlah,  setTotalHarga } = useContext(GlobalContext);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [budget, setBudget] = useState(null); // State untuk menyimpan data budget
 
   useEffect(() => {
-    const fetchPaket = async () => {
+    const fetchDetail = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/auth/paket/budgett/${id}`
+          `http://localhost:8000/api/auth/paket/detail/${id}`,
+          {
+            params: {
+              jumlah_hari: jumlah,
+              jumlah_employee: jumlahKaryawan,
+            },
+          }
         );
-        if (response.data.status === "success") {
-          setPaket(response.data.data);
+        if (response.status === 200) {
+          setPaket(response.data.Data); // Set state untuk detail paket
+          console.log("Paket data:", response.data.Data);
+          setTotalHarga(response.data.Data.Total_harga);
         } else {
-          setError("Data not found");
+          setError("Detail data not found");
         }
-      } catch (err) {
-        setError("Error fetching data");
+      } catch (error) {
+        setError("Error fetching detail data");
       } finally {
         setLoading(false);
       }
     };
 
-    fetchPaket();
+    fetchDetail();
+  }, [id, jumlah, jumlahKaryawan]);
+
+  useEffect(() => {
+    const fetchBudget = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get(
+          `http://localhost:8000/api/auth/paket/budgett/${id}`
+        );
+        if (response.status === 200) {
+          setBudget(response.data); // Set state untuk data budget
+          console.log("Budget data:", response.data);
+        } else {
+          setError("Budget data not found");
+        }
+      } catch (error) {
+        setError("Error fetching budget data");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBudget();
   }, [id]);
 
   if (loading) {
@@ -53,92 +87,72 @@ function Detailpaket() {
           <section className="package-info">
             <h1>{paket.nama_paket}</h1>
           </section>
-
-          <section className="destination-info">
-            <h2>{paket.kota}, Jawa Timur</h2>
-            <p>{paket.deskripsi}</p>
-          </section>
-
-          <section className="details">
-            <div className="hotel-info">
-              <img
-                src={`http://localhost:8000/${paket.hotel.images[0].image}`}
-                alt={paket.hotel.nama_hotel}
-                className="hotel-image"
-              />
-              <div className="hotel-details">
-                <h4>{paket.hotel.nama_hotel}</h4>
-                <p>{paket.hotel.tipe_kamar}</p>
-                <p>{paket.hotel.fasilitas}</p>
-                <p>
-                  {paket.hotel.kota}{" "}
-                  <a href={paket.hotel.alamat}>Lihat Lokasi</a>
-                </p>
-                <p className="hotel-price">
-                  Rp. {Number(paket.hotel.harga).toLocaleString()} /kamar/malam
-                </p>
-              </div>
-              <div className="rating">
-                <p>{paket.hotel.rating}</p>
-              </div>
-            </div>
-
-            <div className="transport-info">
-              <h3>Bundle Transportasi</h3>
-              <span className="airline">{paket.transportasi.nama_transportasi}</span>
-              <div className="column-content">
-            <div className="row-info">
-              <span className="time">{paket.transportasi.jam_keberangkatan}</span>
-              <span className="arrow">→</span>
-              <span className="time">{paket.transportasi.jam_kedatangan}</span>
-            </div>
-            <span className="duration">{paket.transportasi.lama_perjalanan}</span>
-
-            <div className="details">
-              <div className="flight-info">
-                <div className="time-place">
-                  <span className="time">{paket.transportasi.jam_keberangkatan}</span>
-                  <span className="place">{paket.transportasi.berangkat}</span>
-                </div>
-                <span className="duration">{paket.transportasi.lama_perjalanan}</span>
-                <div className="time-place">
-                  <span className="time">{paket.transportasi.jam_kedatangan}</span>
-                  <span className="place">{paket.transportasi.tujuan}</span>
-                </div>
-                <div className="class-code">
-                  <span className="class">{paket.transportasi.kelas}</span>
-                </div>
-              </div>
-              <div className="price">
-                Rp.{paket.transportasi.harga}
-              </div>
-            </div>
-          </div>
-          </div>
-
-            <div className="address-info">
-              <h3>{paket.food.nama_kuliner}</h3>
-              <p>Rating: {paket.food.rating}</p>
-              <p>Buka: {paket.food.jam_buka}</p>
-              <p>
-                <a href={paket.food.alamat}>Lihat Lokasi</a>
-              </p>
-              <p>Pesan di GoFood: {paket.food.telepon}</p>
-            </div>
-          </section>
-
-          <div className="price">
-            <div className="price-container">
-              <p className="price">
-                Harga Paket: Rp. {Number(paket.harga_paket).toLocaleString()}
-              </p>
-            </div>
-            <div className="order-container">
-              <Link to={`/ReservasiInvite/${paket.id_paket}/${paket.nama_paket}`}>Order</Link>
-            </div>
-          </div>
         </>
       )}
+
+      {budget && (
+        <section className="details">
+          <div className="hotel-info">
+            <img
+              src={`http://localhost:8000/${budget.data.hotel.images[0].image}`}
+              alt={budget.nama_hotel}
+              className="hotel-image"
+            />
+            <div className="hotel-details">
+              <h4>{budget.data.hotel.nama_hotel}</h4>
+              <p>{budget.data.hotel.tipe_kamar}</p>
+              <p>{budget.data.hotel.fasilitas}</p>
+              <p>
+                {budget.data.hotel.kota} <a href={budget.data.hotel.alamat}>Lihat Lokasi</a>
+              </p>
+              <p className="hotel-price">{budget.data.hotel.harga}</p>
+            </div>
+            <div className="rating">
+              <p>{budget.data.hotel.rating}</p>
+            </div>
+          </div>
+
+          <div className="transport-info">
+            <h3>{budget.data.transportasi.jenis_transportasi}</h3>
+            <div className="transport-details">
+              <h4>{budget.data.transportasi.nama_transportasi}</h4>
+              <div className="flight-details">
+                <div className="flight-time">
+                  <p>{budget.data.transportasi.berangkat}</p>
+                  <p>{budget.data.transportasi.jam_keberangkatan}</p>
+                </div>
+                <div className="flight-time">
+                  <p>{budget.data.transportasi.tujuan}</p>
+                  <p>{budget.data.transportasi.jam_kedatangan}</p>
+                </div>
+                <div className="flight-info">
+                  <p>{budget.data.transportasi.kelas}</p>
+                  <p>{budget.data.transportasi.lama_perjalanan}</p>
+                </div>
+              </div>
+            </div>
+            <p className="transport-price">{budget.data.transportasi.harga}</p>
+          </div>
+
+          <div className="address-info">
+            <h3>{budget.data.food.nama_kuliner}</h3>
+            <p>Rating: {budget.data.food.rating}</p>
+            <p>Buka: {budget.data.food.jam_buka}</p>
+            <p>
+              <a href={budget.data.food.alamat}>Lihat Lokasi</a>
+            </p>
+            <p>Kota {budget.data.food.kota}</p>
+          </div>
+        </section>
+      )}
+      <div className="footer">
+        <div className="price-container">
+          <p className="price">Harga Paket: {paket?.Total_harga}</p>
+        </div>
+          <button className="Detailpaket"><Link to={`/ReservasiInvite/${paket?.id}/${paket?.nama_paket}`}>
+            Order
+          </Link></button>
+      </div>
     </div>
   );
 }

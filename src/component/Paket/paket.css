@@ -364,3 +364,214 @@
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
+/* Responsive Styles for 400x921 */
+@media (max-width: 400px) {
+  .wrap-content-paket {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .paket {
+    padding: 15px;
+    margin: 10px 0;
+  }
+
+  .judul-paket {
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
+
+  .list-paket,
+  .wrap-list-paket {
+    flex-direction: column;
+  }
+
+  .paketw .row {
+    flex-direction: column;
+  }
+
+  .hotel,
+  .column {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .gambar-paket img {
+    width: 100px;
+    height: 75px;
+  }
+
+  .infoPaket .Hotelss {
+    font-size: 14px;
+  }
+
+  .transportasi p {
+    margin: 5px 0;
+  }
+
+  .paket-container {
+    align-items: flex-start;
+  }
+
+  .paket-container p {
+    margin: 5px 0;
+  }
+
+  .Detailpaket {
+    padding: 8px 15px;
+  }
+
+  .judul-kota {
+    font-size: 18px;
+  }
+
+  .rekomendasi-paket-murah {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .paket-murah-content-img img {
+    width: 100px;
+    height: 75px;
+  }
+
+  .paket-murah-content-info-2-harga {
+    font-size: 16px;
+  }
+
+  .paket-murah-content-info-2-detail a {
+    font-size: 12px;
+  }
+
+  .drop-down-detail p {
+    font-size: 14px;
+  }
+
+  .toggle-details {
+    font-size: 20px;
+  }
+}
+
+/* Additional mobile responsive tweaks */
+@media (max-width: 921px) {
+  .rowPaket {
+      width: 100%;
+  }
+
+
+  .wrap-murah-list-sebelahan {
+    grid-template-columns: 1fr;
+  }
+
+  .wrap-rekomendasi-paket-murah {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.wrap-content-paket {
+  width: 50%;
+  padding: 10px;
+  margin-left: 25%;
+}
+
+  .paket {
+    padding: 15px;
+    margin: 10px 0;
+  }
+
+  .judul-paket {
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
+
+  .list-paket,
+  .wrap-list-paket {
+    flex-direction: column;
+  }
+
+  .paketw .row {
+    flex-direction: column;
+  }
+
+  .hotel,
+  .column {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .gambar-paket img {
+    width: 100%;
+    height: 150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+  .infoPaket .Hotelss {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 17px;
+    color: black;
+}
+
+.transportasi{
+  margin-bottom: 15px;
+}
+
+.transportasi p {
+  margin-left: 0%;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+  .paket-container {
+    align-items: flex-start;
+    display: inline-grid;
+    margin-top: 15px;
+}
+
+
+.paket-container p {
+  /* margin: 5px 0; */
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+  .Detailpaket {
+    padding: 8px 15px;
+  }
+
+  .judul-kota {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+  .rekomendasi-paket-murah {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .paket-murah-content-img img {
+    width: 100px;
+    height: 75px;
+  }
+
+  .paket-murah-content-info-2-harga {
+    font-size: 16px;
+  }
+
+  .paket-murah-content-info-2-detail a {
+    font-size: 12px;
+  }
+
+  .drop-down-detail p {
+    font-size: 14px;
+  }
+
+  .toggle-details {
+    font-size: 20px;
+  }
+}
